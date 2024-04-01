@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml versJAQUELINE ROMERO TORRESion="1.0" encoding="UTF-8"?>
 <Documento>
-JAQUELINE ROMERO TORRES
+  <DatosDeudor>
     <Nombre>Nombre del Deudor</Nombre>
     <IBAN>ES0123456789012345678901</IBAN>
   </DatosDeudor>
