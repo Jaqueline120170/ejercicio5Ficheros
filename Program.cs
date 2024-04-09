@@ -13,8 +13,16 @@ namespace ejercicio5Ficheros
             {
                 Console.WriteLine("Añada contenido al archivo");
                 string contenido = Console.ReadLine();
-                sw.Write(contenido);
-                Console.WriteLine("Indica 'L' si deseas modificar una linea o 'P' si desees añadir una modificacion a partir de una posicion");
+                sw.Write(contenido + "\n");
+            }
+            using (StreamWriter sw = new StreamWriter(rutaArchivo, true))
+            {
+                Console.WriteLine("Introduzca nuevo cotenido");
+                string masContenido = Console.ReadLine();
+                sw.WriteLine(masContenido + "\n");
+            }
+
+            Console.WriteLine("Indica 'L' si deseas modificar una linea o 'P' si desees añadir una modificacion a partir de una posicion");
                 char modificacion = Convert.ToChar(Console.ReadLine());
 
                 if (modificacion == 'L')
@@ -90,11 +98,6 @@ namespace ejercicio5Ficheros
 
                 }
 
-
-           
-
-            
-            }
         }
     }
 }
